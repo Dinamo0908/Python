@@ -1,0 +1,43 @@
+#Password
+def contra(password):
+ check = False
+ long = len(password)
+ espacio = False
+ mayus = False
+ minus = False
+ k = password.isalnum()
+ numeros = False
+ checked = True
+
+ for c in password:
+  if c.isspace() == True:
+   espacio = True
+  if c.isupper() == True:
+   mayus = True
+   print ("La password tiene al menos un caracter en mayuscula.")
+  if c.islower == True:
+   minus = True
+   print ("La password tiene al menos un caracter en minuscula.")
+  if c.isdigit() == True:
+   numeros = True
+   print ("La password tiene al menos un caracter numerico.")
+  if k == True:
+   print ("Es necesario al menos un caracter no alfanumerico, es decir, que no sea ni una letra ni un numero.")
+
+ if espacio == True:
+  print ("La contra tiene espacios, intentalo nuevamente.")
+ else:
+  check = True
+
+ if long <8 and validar==True:
+  print("Minimo 8 caracteres")
+  validar=False 
+
+ if mayus == True and minus == True and numeros == True and check == True:
+  check = True
+ else:
+  checked = False
+  print ("La contrasenia necesita de al menos un caracter en mayuscula, minuscula, numerico, no alfanumerico, no tener espacios y tener como minimo 8 caracteres.")
+
+ if check == True and checked == True:
+  return True

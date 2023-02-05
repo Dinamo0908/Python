@@ -1,0 +1,9 @@
+#Lights Off
+import time
+
+
+print ("Bienvenido a Lights Off. Eres un joven chico de 10 solsticios que tiene miedo a la oscuridad.")
+print ("Tu objetivo es dormir, sin morir en el intento por el monstruo que te perseguira.")
+print ("Para eso, dormiras presionando la tecla S una vez. Si consigues dormir 10 segundos enteros, ganas. Si se acerca el mounstruo, despierta presionando la tecla G.")
+print ("Preparado?")
+ch1 = input(": ")

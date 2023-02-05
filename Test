@@ -1,0 +1,78 @@
+#Test de tontos
+import time
+
+def death(tme):
+ print("Autodestruccion en 3 segundos...")
+ while tme >= 0:
+  print(tme)
+  time.sleep(1)
+  tme -= 1
+  print("BOOM!")
+  tme=3
+
+def test():
+ l = 0
+ w = 0
+ print ("Cuanto es dos mas dos? 4/2/pescado")
+ ch2 = input (": ")
+ if ch2 == "4":
+  print ("Demasiado listo! Autodestruccion del sistema!")
+  death(3)
+  l += 1
+ elif ch2 == "2": 
+  print ("Nop, no eres tan tonto. A ver, fallaste la prueba, pero por lo menos no vas a recursar jardin por sexta vez como el que diga la respuesta correcta :D")
+  death(3)
+  l += 1
+ elif ch2 == "pescado":
+  print ("Correcto! Siguiente pregunta...")
+  w += 1
+  time.sleep(3)
+  print ("Si yo tengo dos manzanas, y vos me quitas una, luego yo me subo a un camion a 200 km por hora y consigo una tonelada de cepita de manzana, cuantas manzanas tengo? 1/tonelada y 1 manzana/CUIDADO UN ELEFANTE ROSA")
+  ch3 = input (": ")
+  if ch3 == "1":
+   print ("Demasiado listo! Autodestruccion del sistema!")
+   death(3)
+   l += 1
+  elif ch3 == "tonelada y 1 manzana":
+   print ("Nop, no eres tan tonto. A ver, fallaste la prueba, pero por lo menos no vas a recursar jardin por sexta vez como el que diga la respuesta correcta :D")
+   death(3)
+   l += 1
+  elif ch3 == "CUIDADO UN ELEFANTE ROSA":
+   print ("Correcto! Siguiente pregunta...")
+   w += 1
+   time.sleep(3)
+   print ("Ya llegaste lejos, esta es la ultima pregunta. Atento: Si el gato come Catty, el Perro Doggy, que come el Pony? pony/alfalfa/massachusets")
+   ch4 = input(": ")
+   if ch4 == "pony":
+    print ("Demasiado listo! Autodestruccion del sistema!")
+    death(3)
+    l += 1
+  elif ch4 == "alfalfa":
+   print ("Correcto! Has completado el juego! :D") 
+   w += 1
+   time.sleep(3)
+   print ("Has acertado " + w + " preguntas. Eres todo un campeon de los tarados!")
+   print ("Nos vemos!")
+  elif ch4 == "massachusets":
+   print ("Nop, no eres tan tonto. A ver, fallaste la prueba, pero por lo menos no vas a recursar jardin por sexta vez como el que diga la respuesta correcta :D")
+   death(3)
+   l += 1
+
+
+def first():
+ print ("Bienvenido al test para tontos. Preparado para jugar? si/no/uhh")
+ ch1 = input(": ")
+ if ch1 == "si":
+  print ("Que pena, eres demasiado listo. Adios!")
+ elif ch1 == "no":
+  print ("Que pena, eres demasiado listo y maduro. Adios!")
+ elif ch1 == "uhh":
+  print ("Empecemos!")
+  test()
+ else: 
+  print ("Que vergas dijiste?")
+  first()
+
+print ("BEEP - BOOP cargando sistema...")
+time.sleep(3)
+first()

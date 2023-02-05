@@ -1,0 +1,8 @@
+bibliografia
+https://tuelectronica.es/que-es-la-protoboard/
+https://concepto.de/placa-madre/
+https://www.monografias.com/trabajos104/puertos-y-conectores-pc/puertos-y-conectores-pc.shtml
+https://www.hsa.org.uk/electricidad/corriente-voltaje-y-resistencia
+https://es.tableworld.net/tablas-de-equivalencias/equivalencias-informatica
+https://www.cursosgis.com/los-principales-entorno-de-desarrollo-ides-para-escribir-y-depurar-codigo-javascript/
+https://aprendiendoarduino.wordpress.com/category/estructuras-de-repeticion/

@@ -1,0 +1,36 @@
+filename = input("Selecciona un archivo de texto: ")
+
+with open(filename) as f:
+ text = f.read().split('.')
+ lng = str(len(text) - 1)
+ print("En este texto, hay un total de " + lng + " oraciones")
+
+ print("Cual oracion quieres leer?")
+ user_input = input(": ")
+
+ if user_input == "salir":
+  print ("adios!")
+
+
+ elif user_input == "todas":
+  with open(filename) as f:
+   all = f.read()
+   print (all)
+
+
+ else:
+     with open(filename) as f:
+      rd = user_input - 1
+      first = f.read().split('.')[rd]
+      print (first)
+
+
+
+
+
+
+
+
+
+
+

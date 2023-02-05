@@ -1,0 +1,81 @@
+#Piedra Papel Tijeras
+from random import randint
+
+print ("PIEDRA, PAPEL, TIJERAS ULTIMATE")
+
+op = ["Piedra", "Papel", "Tijeras"]
+
+def tr():
+  user_input = input("Quieres intentarlo otra vez?: ")
+  if user_input == "si":
+    print ("A ksa malo, no arrancamos")
+  elif user_input == "no":
+    print ("Entonces, nos vemos luego!")
+
+pc = op[randint(0,2)]
+
+win = 0
+lose = 0
+
+print ("Elige una de las siguientes opciones: Piedra Papel o Tijeras")
+player = False
+
+while player == False:
+ player = input("Elige!: ")
+ if player == pc:
+  print ("Tenemos un empate! la pc eligio " + pc)
+  tr()
+
+ elif player == "Piedra":
+   if pc == "Papel":
+    print ("Perdiste! la pc eligio " + pc)
+    loses = str(lose + 1)
+    print ("Llevas " + loses + " derrota/s")
+    tr()
+   elif pc == "Tijeras":
+    print ("Ganaste! la pc eligio " + pc)
+    wins = str(win + 1)
+    print ("Llevas " + wins + " victoria/s")
+    tr()
+
+ elif player == "Papel":
+   if pc == "Tijeras":
+    print ("Perdiste! la pc eligio " + pc)
+    loses = str(lose + 1)
+    print ("Llevas " + loses + " derrota/s")
+    tr()
+   elif pc == "Piedra":
+    print ("Ganaste! la pc eligio " + pc)
+    wins = str(win + 1)
+    print ("Llevas " + wins + " victoria/s")
+    tr()
+
+ elif player == "Tijeras":
+   if pc == "Piedra":
+    print ("Perdiste! la pc eligio " + pc)
+    loses = str(lose + 1)
+    print ("Llevas " + loses + " derrota/s")
+    tr()
+   elif pc == "Papel":
+    print ("Ganaste! la pc eligio " + pc)
+    wins = str(win + 1)
+    print ("Llevas " + wins + " victoria/s")
+    tr()
+
+ else:
+  print ("Lo siento, no te he entendido. Quieres intentarlo otra vez?")
+  tr()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

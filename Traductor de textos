@@ -1,0 +1,48 @@
+#Traductor
+from string import maketrans
+import time
+
+print ("Bienvenido al criptobot, el bot de Sherlock Holmes")
+print (" -BEEP- -BEEP- Iniciando programa...")
+time.sleep(2)
+print ("Bienvenido, usuario. Soy criptobot, el bot de Sherlock Holmes. Tengo un total de 3 codigos distintos, los cuales son: ")
+time.sleep(1)
+print ("Codigo Cesar")
+time.sleep(1)
+print ("Cifrado Espejo")
+time.sleep(1)
+print ("Metodo Reflejo")
+time.sleep(1)
+
+print ("Cual metodo quieres usar?")
+c1 = input(": ")
+if c1 == "cesar":
+ print ("Utilizaremos " + c1 +  " entonces. Que quieres encriptar?")
+ ces1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+ ces2 = "GHIJKLMNOPQRSTUVWXYZABCDEFghijklmnopqrstuvwxyzabcdef"
+ cesf = maketrans(ces1, ces2)
+ str = input(" ")
+ print str.translate(cesf)
+ time.sleep(1)
+ print ("Eso es todo. Suerte!")
+
+elif c1 == "espejo":
+ print ("Utilizaremos " + c1 +  " entonces. Que quieres encriptar?")
+ ces1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+ ces2 = "ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba"
+ cesf = maketrans(ces1, ces2)
+ str = input(" ")
+ print str.translate(cesf)
+ time.sleep(1)
+ print ("Eso es todo. Suerte!")
+
+elif c1 == "reflejo":
+ print ("Utilizaremos " + c1 +  " entonces. Que quieres encriptar?")
+ ces1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+ ces2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+ cesf = maketrans(ces1, ces2)
+ str = input(" ")
+ print str.translate(cesf)
+ time.sleep(1)
+ print ("Eso es todo. Suerte!")
+
