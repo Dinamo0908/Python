@@ -1,2 +1,2 @@
 # Python
-Programas desarrollados con Python.
+Proyectos desarrollados con Python.
